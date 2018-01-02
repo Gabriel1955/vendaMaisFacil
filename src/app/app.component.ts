@@ -14,5 +14,15 @@ export class AppComponent {
     usuario:"gabriel123",
     senha:"gabriel123"
   }
+  constructor(){
+
+
+  }
+  isToggled: boolean = false;
+  toggle() {
+    this.isToggled = !this.isToggled;
+  }
+
+  
 
 }

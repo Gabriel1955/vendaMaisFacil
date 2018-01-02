@@ -1,6 +1,5 @@
 <nav class="navbar navbar-inverse bg-inverse">
   <span class="navbar-toggler-icon link" (click)="toggle()"></span>
-
   <div class="navbar-toggler-right text-white">
     <span class="fa fa-cogs link " style="margin-right:15px"></span>
     <a class="link">
@@ -14,16 +13,22 @@
 <div id="wrapper" [ngClass]="isToggled ? ['toggled'] : []">
   <div class="side-nav" id="sidebar-wrapper">
     <ul>
-      <li>
-        <a>
-          <span class="fa fa-square-o"></span>
-          <span>Primeiro componente</span>
+      <li routerLink="">
+        <a >
+          <span class="fa fa-home"></span>
+          <span>Inicio</span>
         </a>
       </li>
+      <li routerLink="config">
+          <a > 
+            <span class="fa fa-cog"></span>
+            <span>Configurações</span>
+          </a>
+        </li>
     </ul>
   </div>
 
   <div class="main-content" id="paga-content-wrapper">
-
+      <router-outlet></router-outlet>
   </div>
 </div>

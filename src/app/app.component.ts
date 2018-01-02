@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  //usuario para teste, futuramente login eve ser feito pelo service
+  usuario = {
+    nome:"Gabriel Paulino Farias da Silva",
+    usuario:"gabriel123",
+    senha:"gabriel123"
+  }
+
 }
